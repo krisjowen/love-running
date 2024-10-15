@@ -70,6 +70,10 @@ h2 {
   letter-spacing: 4px;
 }
 
+menu > li {
+  margin-bottom: 1em;
+}
+
 #logo, #menu {
   line-height: 75px;
 }
@@ -89,7 +93,7 @@ h2 {
 }
 
 .active {
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 #hero-image {
