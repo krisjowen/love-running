@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+/* General Styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  font-family: 'Lato', sans-serif;
+  color: #3a3a3a;
+}
+
 /* Header */
 header {
   background-color: #ffffff;
@@ -16,6 +26,9 @@ header {
   z-index: 99;
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 header a {
@@ -30,7 +43,46 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Main */
+#menu {
+  font-size: 110%;
+  list-style-type: none;
+  letter-spacing: 4px;
+}
+
+menu > li {
+  margin-bottom: 1em;
+}
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown menu */
+nav {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding-bottom: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
+/* Main Content */
 main {
   background-color: lightblue;
   /* Make main element take up any surplus space */
@@ -40,16 +92,6 @@ main {
 /* Footer */
 footer {
   background-color: orange;
-}
-
-/* General Styles */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* Generic project styles */
-  font-family: 'Lato', sans-serif;
-  color: #3a3a3a;
 }
 
 h2 {
@@ -62,16 +104,6 @@ h2 {
 #logo {
   float: left;
   font-size: 280%; 
-}
-
-#menu {
-  font-size: 110%;
-  list-style-type: none;
-  letter-spacing: 4px;
-}
-
-menu > li {
-  margin-bottom: 1em;
 }
 
 #logo, #menu {
@@ -90,21 +122,6 @@ menu > li {
 
 #menu a:hover {
   border-bottom: 1px solid #777777;
-}
-
-.active {
-  border-bottom: 1px solid #3a3a3a;
-}
-
-/* Navbar styles with dropdown menu */
-nav {
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
-  left: 0;
-  padding-bottom: 0 1rem;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: none;
 }
 
 #hero-image {
