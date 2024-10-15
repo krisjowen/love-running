@@ -1,15 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
+/* Asterisk wildcard to override browser defaults */
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
+/* Header */
+header {
+  background-color: lightcoral;
+}
+
+/* Main */
+main {
+  background-color: lightblue;
+  /* Make main element take up any surplus space */
+  flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: orange;
+}
+
+/* General Styles */
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
   font-family: Oswald;
-  color: #777777;
+  color: #3a3a3a;
 }
 
 h2 {
